@@ -1696,10 +1696,11 @@
 
 	p {
 		margin: 0 0 2em 0;
+		color: black;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ff8d00 ;
+		color: black  ;
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -1889,9 +1890,9 @@
 		transition: border-color 0.2s ease;
 		background-color: transparent;
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: black !important;
 		border-radius: 3em;
-		color: #ffffff !important;
+		color: black !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -2053,7 +2054,7 @@
 		flex-wrap: wrap;
 		border-radius: 0.25em;
 		border: solid 1px rgba(255, 255, 255, 0.15);
-		background: rgba(255, 255, 255, 0.05);
+		background-image: url(;
 		margin: 0 0 2em 0;
 	}
 
@@ -3269,7 +3270,7 @@
 		}
 
 		.wrapper.style3 {
-			background-color: #84927a;
+			background-color: #dbdbdb;
 		}
 
 		.wrapper.style3-alt {
@@ -3534,7 +3535,7 @@
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: green;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3881,10 +3882,12 @@
 		}
 
 /* Intro */
+	#one .content {background-image: url("../../images/pic12.jpg");}
+
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		background-image: url("../../images/pic12.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
@@ -3892,6 +3895,7 @@
 
 		#intro p {
 			font-size: 1.25em;
+			color: black;
 		}
 
 			@media screen and (max-width: 980px) {
