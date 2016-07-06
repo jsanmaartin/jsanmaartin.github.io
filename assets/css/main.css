@@ -9,10 +9,10 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,   blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
-		border: 0;
+		
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
@@ -1602,21 +1602,28 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #e13652;
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 1em 0;
-	}
+	font-weight: bold;
+    font-style: oblique;
+    font-variant: small-caps;
+}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
+			color: orange;
 			border: 0;
+			font-variant: small-caps;
+			font-size: x-large;
 		}
 
 	h2 {
 		font-size: 2em;
 		line-height: 1.5em;
 		letter-spacing: -0.025em;
+		color: #e13652;
+    font-variant: small-caps;
 	}
 
 	h3 {
@@ -2104,6 +2111,11 @@
 		color: #ffffff;
 		position: relative;
 		margin: 0 0 1.5em 0;
+		font-style: oblique;
+    font-weight: bold;
+    font-variant: small-caps;
+    
+    
 	}
 
 	header h2 + p {
@@ -2516,6 +2528,7 @@
 		list-style: disc;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
+		font-style: oblique;
 	}
 
 		ul li {
@@ -2814,6 +2827,9 @@
 
 /* Goto Next */
 
+	.blackText {color: black;}
+	font-weight: bold;
+
 	.goto-next {
 		border: 0;
 		bottom: 0;
@@ -2939,7 +2955,7 @@
 
 		.spotlight:before {
 			background-image: url("images/overlay.png");
-			content: '';
+			
 			display: block;
 			height: 100%;
 			left: 0;
@@ -3020,15 +3036,15 @@
 		}
 
 		.spotlight.style1 .content {
-			border-color: #e44c65;
+			border-color: orange ;
 		}
 
 		.spotlight.style2 .content {
-			border-color: #5480f1;
+			border-color: orange ;
 		}
 
 		.spotlight.style3 .content {
-			border-color: #39c088;
+			border-color: orange ;
 		}
 
 		.spotlight.inactive .content {
@@ -3298,6 +3314,9 @@
 						height: inherit;
 						line-height: inherit;
 						outline: 0;
+						font-weight: bold;
+    text-transform: uppercase;
+    font-size: medium;
 					}
 
 						#header nav ul li a.button, #header nav ul li span.button {
@@ -3326,6 +3345,7 @@
 		background: transparent;
 		box-shadow: none;
 		position: absolute;
+		color: orange ;
 	}
 
 /* Banner */
@@ -3333,13 +3353,13 @@
 	#banner {
 		background-attachment: fixed;
 		background-color: #272833;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/manos4.jpg");
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		min-height: 100vh;
 		position: relative;
-		text-align: center;
+		
 		z-index: 21;
 	}
 
@@ -3352,10 +3372,10 @@
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.40)), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.40)), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.40)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.40)), url("images/overlay.png");;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3379,6 +3399,7 @@
 			#banner .content header {
 				display: inline-block;
 				vertical-align: middle;
+				margin-top: -40%;
 			}
 
 				#banner .content header h2 {
